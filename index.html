@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="description" content="Project Hub — A premium dashboard showcasing my hosted static websites, tools, and UI experiments." />
+  <meta name="keywords" content="project hub, portfolio, static sites, frontend, dashboard, web development" />
+  <meta name="author" content="Boopathi Subramanian" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Project Hub — Premium Dashboard" />
+  <meta property="og:description" content="A central hub for all my hosted static websites." />
+  <meta property="og:type" content="website" />
+
+  <title>Project Hub — Premium Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ===== Loading Screen ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__orb"></div>
+    <p class="loader__text">Loading Hub</p>
+  </div>
+
+  <!-- ===== Scroll Progress ===== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== Sticky Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Project Hub Home">
+        <span class="nav__logo-mark" aria-hidden="true"></span>
+        <span class="nav__logo-text">Project<span>Hub</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#featured">Featured</a>
+        <a href="#stats">Stats</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light mode">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
+          </svg>
+        </button>
+
+        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+        <div class="hero__blob hero__blob--3"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="hero__content">
+        <span class="badge reveal">
+          <span class="badge__dot"></span> Live · Updated continuously
+        </span>
+        <h1 class="hero__title reveal">
+          One hub for <span class="gradient-text">every project</span> I ship.
+        </h1>
+        <p class="hero__subtitle reveal">
+          A curated dashboard of my static websites, UI experiments, tools, and landing pages — designed, coded, and deployed by me.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">
+            View Projects
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#about" class="btn btn--ghost">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">About</span>
+          <h2>Crafted with care, shipped with intent.</h2>
+          <p>I design and build polished, accessible web experiences. Every project here is hand-coded, performance-tuned, and deployed as a fast static site.</p>
+        </header>
+
+        <div class="about-grid">
+            <article class="about-card about-card--workflow reveal">
+            <header class="workflow__header">
+                <div class="workflow__header-left">
+                <span class="workflow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/>
+                    </svg>
+                </span>
+                <div>
+                    <h3 class="workflow__title">Delivery Workflow</h3>
+                    <p class="workflow__subtitle">End-to-end process from concept to production</p>
+                </div>
+                </div>
+                <span class="workflow__status">
+                <span class="workflow__status-dot" aria-hidden="true"></span>
+                Active
+                </span>
+            </header>
+
+            <ol class="workflow">
+                <li class="workflow__step" data-step="01">
+                <span class="workflow__step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.7.6 1 1.5 1 2.3h6c0-.8.3-1.7 1-2.3A7 7 0 0 0 12 2z"/>
+                    </svg>
+                </span>
+                <div class="workflow__step-body">
+                    <span class="workflow__step-label">Ideation</span>
+                    <span class="workflow__step-desc">Define scope &amp; requirements</span>
+                </div>
+                <span class="workflow__step-state" data-state="complete">Complete</span>
+                </li>
+
+                <li class="workflow__step" data-step="02">
+                <span class="workflow__step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/>
+                    </svg>
+                </span>
+                <div class="workflow__step-body">
+                    <span class="workflow__step-label">AI-Assisted Prompting</span>
+                    <span class="workflow__step-desc">Architect solutions with AI tooling</span>
+                </div>
+                <span class="workflow__step-state" data-state="complete">Complete</span>
+                </li>
+
+                <li class="workflow__step" data-step="03">
+                <span class="workflow__step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+                    </svg>
+                </span>
+                <div class="workflow__step-body">
+                    <span class="workflow__step-label">Engineering</span>
+                    <span class="workflow__step-desc">Production-grade implementation</span>
+                </div>
+                <span class="workflow__step-state" data-state="complete">Complete</span>
+                </li>
+
+                <li class="workflow__step" data-step="04">
+                <span class="workflow__step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+                    </svg>
+                </span>
+                <div class="workflow__step-body">
+                    <span class="workflow__step-label">Quality Assurance</span>
+                    <span class="workflow__step-desc">Cross-browser &amp; accessibility testing</span>
+                </div>
+                <span class="workflow__step-state" data-state="complete">Complete</span>
+                </li>
+
+                <li class="workflow__step" data-step="05">
+                <span class="workflow__step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </span>
+                <div class="workflow__step-body">
+                    <span class="workflow__step-label">Deployment</span>
+                    <span class="workflow__step-desc">CI/CD to production hosting</span>
+                </div>
+                <span class="workflow__step-state" data-state="active">In Progress</span>
+                </li>
+            </ol>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Projects</span>
+          <h2>Search & explore the collection.</h2>
+          <p>Filter by category or search live — results update instantly.</p>
+        </header>
+
+        <!-- Search + Filters -->
+        <div class="toolbar reveal">
+          <div class="search">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>
+            </svg>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Search projects, technologies..."
+              aria-label="Search projects"
+            />
+          </div>
+
+          <div class="filters" id="filters" role="tablist" aria-label="Project categories">
+            <!-- Filter buttons injected by JS -->
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="projects-grid" id="projectsGrid" aria-live="polite">
+          <!-- Cards injected by JS -->
+        </div>
+
+        <p class="empty-state" id="emptyState" hidden>
+          No projects match your search. Try a different keyword.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Featured ===== -->
+    <section class="section" id="featured">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Featured</span>
+          <h2>Hand-picked highlights.</h2>
+          <p>The projects I'm most proud of — polished, performant, and production-ready.</p>
+        </header>
+
+        <div class="featured-grid" id="featuredGrid">
+          <!-- Featured cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="section section--alt" id="stats">
+      <div class="container">
+        <header class="section__head reveal">
+        <span class="eyebrow">About</span>
+        <h2>Crafted with care, shipped with intent.</h2>
+        <p>I design and build polished, accessible web experiences — combining creative ideas, AI-assisted prompting, hands-on coding, and thorough testing.</p>
+        </header>
+
+        <div class="stats-grid">
+        <div class="stat-card reveal">
+            <span class="stat-card__num" id="statProjectsCount">0</span>
+            <span class="stat-card__label">Total Projects</span>
+        </div>
+        <div class="stat-card reveal">
+            <span class="stat-card__num" id="statCategoriesCount">0</span>
+            <span class="stat-card__label">Categories</span>
+        </div>
+        <div class="stat-card reveal">
+            <span class="stat-card__num" id="statTechCount">0</span>
+            <span class="stat-card__label">Technologies</span>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#home" class="nav__logo" aria-label="Back to top">
+          <span class="nav__logo-mark" aria-hidden="true"></span>
+          <span class="nav__logo-text">Project<span>Hub</span></span>
+        </a>
+        <p class="footer__copy">© <span id="year"></span> Boopathi Subramanian. All rights reserved.</p>
+      </div>
+
+      <ul class="socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.9.83.1-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.9-1.3 2.74-1.03 2.74-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4v4H4zM4 10h4v10H4zM10 10h4v2a4 4 0 0 1 7 2.7V20h-4v-4.5c0-1.4-1.1-2.5-2.5-2.5S12 14.1 12 15.5V20h-4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l7.5 9L4.5 20H7l6-6 5 6h3l-7.7-9.2L19 4h-2.5L11 9 7 4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:hello@example.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ===== Back to Top ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
