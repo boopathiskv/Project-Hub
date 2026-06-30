@@ -31,7 +31,7 @@ const projects = [
     description: '🗂️ Daily Work Follow-Up Tracker — a secure, offline, single-page task manager built with pure HTML5, CSS3 & vanilla JS. Features auto Task IDs from Start Date, JSON Import/Export, search, filters, sort, summary dashboard, overdue detection, popup-based UX, strict CSP, and zero external dependencies. Fully responsive.',
     category: 'Tools',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    live: 'https://boopathiskv.github.io/PasswordManager/',
+    live: 'https://boopathiskv.github.io/daily-work-tracker/',
     github: 'https://github.com/boopathiskv/daily-work-tracker',
     featured: true,
     gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
