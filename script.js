@@ -7,12 +7,22 @@
 /* ----------- 1. Project Data ----------- */
 const projects = [
     {
-    title: 'Password Manager',
-    description: 'Password Manager is a 100% offline, static single-page password manager built with pure HTML5, CSS3, and vanilla JavaScript. Features multi-layer encryption (AES-GCM 256 + PBKDF2 600k + XOR + Base64), per-record 6-digit PIN protection, enterprise dashboard UI, CRUD, search, categories, import/export — zero dependencies, zero CDN, runs from a Usb static',
+    title: 'Project Hub',
+    description: 'About🚀 Project Hub — A premium single-page dashboard for showcasing all my hosted static websites. Built with only HTML5, CSS3 & Vanilla JS (ES2024+). Zero frameworks, zero dependencies. Features glassmorphism, dark/light mode, live search, animated counters, enterprise workflow card, reveal animations & full WCAG accessibility.',
+    category: 'UI',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    live: 'https://boopathiskv.github.io/Project-Hub/',
+    github: 'https://github.com/boopathiskv/Project-Hub',
+    featured: true,
+    gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
+  },
+   {
+    title: 'Emergency Contact QR Code',
+    description: 'A static web app helping people recover lost items like luggage, wallets, or keys. Users enter contact details to generate a unique QR code to print and attach to belongings. If an item goes missing, finders simply scan the QR code to instantly view owner details and get in touch. Built fast and secure using HTML, CSS, and JavaScript.',
     category: 'Tools',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    live: 'https://boopathiskv.github.io/PasswordManager/',
-    github: 'https://github.com/boopathiskv/PasswordManager',
+    live: 'https://emergencycontactsdetails.github.io/ECQC/',
+    github: 'https://github.com/emergencycontactsdetails/ECQC',
     featured: true,
     gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
   },
@@ -26,16 +36,18 @@ const projects = [
     featured: true,
     gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
   },
- {
-    title: 'Emergency Contact QR Code',
-    description: 'A static web app helping people recover lost items like luggage, wallets, or keys. Users enter contact details to generate a unique QR code to print and attach to belongings. If an item goes missing, finders simply scan the QR code to instantly view owner details and get in touch. Built fast and secure using HTML, CSS, and JavaScript.',
+    {
+    title: 'Password Manager',
+    description: 'Password Manager is a 100% offline, static single-page password manager built with pure HTML5, CSS3, and vanilla JavaScript. Features multi-layer encryption (AES-GCM 256 + PBKDF2 600k + XOR + Base64), per-record 6-digit PIN protection, enterprise dashboard UI, CRUD, search, categories, import/export — zero dependencies, zero CDN, runs from a Usb static',
     category: 'Tools',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    live: 'https://emergencycontactsdetails.github.io/ECQC/',
-    github: 'https://github.com/emergencycontactsdetails/ECQC',
+    live: 'https://boopathiskv.github.io/PasswordManager/',
+    github: 'https://github.com/boopathiskv/PasswordManager',
     featured: true,
     gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
   },
+   
+ 
 
 ];
 
