@@ -46,6 +46,16 @@ const projects = [
     featured: true,
     gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
   },
+   {
+    title: 'Last Working Day Enterprise Countdown Portal',
+    description: 'Enterprise-grade single-page countdown dashboard to track multiple last working days (or any deadlines). Built with vanilla HTML5, CSS3 & JavaScript — no frameworks, no storage, no external calls. Supports future (countdown) & past (elapsed) dates, JSON import/export, strict CSP, and full accessibility. Runs by opening index.html.',
+    category: 'Tools',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    live: 'https://boopathiskv.github.io/countdown-dashboard/',
+    github: 'https://github.com/boopathiskv/countdown-dashboard',
+    featured: true,
+    gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
+  },
    
  
 
