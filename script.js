@@ -56,12 +56,21 @@ const projects = [
     featured: true,
     gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
   },
-   
+   {
+    title: 'YouTube Downloader CLI',
+    description: 'About simple Python command-line application to download YouTube videos in MP4 (480p, 720p, 1080p) or extract high-quality MP3 audio using yt-dlp and FFmpeg.',
+    category: 'CLI',
+    tech: ['Python'],
+    live: '#',
+    github: 'https://github.com/boopathiskv/youtube-downloader-cli',
+    featured: true,
+    gradient: 'linear-gradient(135deg,#7c5cff,#00d4ff)',
+  },
  
 
 ];
 
-const CATEGORIES = ['All', 'HTML', 'CSS', 'JavaScript', 'UI', 'Landing Pages', 'Dashboards', 'Tools'];
+const CATEGORIES = ['All', 'HTML', 'CSS', 'JavaScript', 'UI', 'Landing Pages', 'Dashboards', 'Tools','CLI'];
 
 /* ----------- Derived stats ----------- */
 const getStats = () => {
